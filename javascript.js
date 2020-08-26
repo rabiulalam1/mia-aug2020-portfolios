@@ -4,7 +4,7 @@ function submitFunction() {
   let url = document.querySelector("#url").value;
 
   axios
-    .post(`https://ironrest.herokuapp.com/antguts`, {
+    .post(`https://ironrest.herokuapp.com/mia-aug2020-webdevs`, {
       first_name: firstName,
       last_name: lasttName,
       website: url,
@@ -16,7 +16,7 @@ function submitFunction() {
 }
 
 function createTable() {
-  axios.get(`https://ironrest.herokuapp.com/antguts`).then((res) => {
+  axios.get(`https://ironrest.herokuapp.com/mia-aug2020-webdevs`).then((res) => {
     for (let i of res.data) {
       document.querySelector("#tableBody").innerHTML +=
         `<tr class="portfolios">
@@ -33,7 +33,7 @@ function createTable() {
         i.website +
         `">` +
         i.first_name +
-        `s Portfolio</a></span>
+        `'s Portfolio</a></span>
             </td>
             <td class="action">
               <button class="btn btn-remove" onclick="removeFunction()">Remove</button>
@@ -56,7 +56,7 @@ function removeFunction() {
 
       axios
         .delete(
-          `https://ironrest.herokuapp.com/deleteOne/antguts?first_name=` +
+          `https://ironrest.herokuapp.com/deleteOne/mia-aug2020-webdevs?first_name=` +
             deleteName
         )
         .then((res) => {
