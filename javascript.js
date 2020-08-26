@@ -11,6 +11,7 @@ function submitFunction() {
     })
     .then((res) => {
       createTable();
+      location.reload();
     });
 }
 
