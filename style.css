@@ -36,15 +36,21 @@ table input {
   border: 1px solid #dadada;
 }
 
+.action {
+  display: flex;
+}
+
 .btn {
   display: inline-block;
   border: 0;
   border-radius: 0.25em;
   cursor: pointer;
+  margin: 5px;
 }
 
 .btn-submit,
-.btn-remove {
+.btn-remove,
+.btn-update {
   color: #fff;
 }
 
@@ -52,8 +58,18 @@ table input {
   background-color: #0da584;
 }
 
+.btn-update {
+  background-color: rgb(228, 165, 82);
+  border: 0;
+}
+
 .btn-remove {
   background-color: #f27471;
+}
+
+.btn-edit {
+  background-color: #629de0;
+  color: white;
 }
 
 h1 {
