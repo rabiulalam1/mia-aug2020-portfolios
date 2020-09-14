@@ -4,45 +4,127 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Ironhack Aug2020 Webdev's Portfolio</title>
+    <title>Ironhack Aug2020 Webdev's Projects</title>
   </head>
   <body>
-    <h1>Ironhack Aug2020 Webdev's Portfolio</h1>
-    <table id="weblinks">
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Website Link</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody">
-        
-      </tbody>
-      <tfoot>
-        <tr class="portfolio-input">
-          <td>
-            <input id="first-name-input" type="text" placeholder="First Name" required="required" />
-          </td>
-          <td>
-            <input id="last-name-input" type="text" placeholder="Last name" required="required"/>
-          </td>
-          <td>
-            <input type="url" name="url" id="url"
-       placeholder="https://example.com"
-       pattern="https://.*" size="30"
-       required="required">
-          </td>
-          <td>
-            <button id="submit" class="btn btn-submit" onclick="submitFunction()" >Submit</button>
-          </td>
-        </tr>
-      </tfoot>
+    <section id="portfolio">
+      <h1>Ironhack Aug2020 Webdev's Portfolio</h1>
+      <table id="weblinks">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Website Link</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tablePortfolio">
+          <!-- >>>>>>>>>Fectched data goes here<<<<<<<<<< -->
+        </tbody>
+        <tfoot>
+          <tr class="portfolio-input">
+            <td>
+              <input
+                id="first-name-input"
+                type="text"
+                placeholder="First Name"
+                required="required"
+              />
+            </td>
+            <td>
+              <input
+                id="last-name-input"
+                type="text"
+                placeholder="Last name"
+                required="required"
+              />
+            </td>
+            <td>
+              <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                size="30"
+                required="required"
+              />
+            </td>
+            <td>
+              <button
+                id="submit"
+                class="btn btn-submit"
+                onclick="portfolioSubmit()"
+              >
+                Submit
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-  
+    <hr />
+
+    <section id="game-project">
+      <h2>Ironhack Aug2020 Webdev's Game Project</h2>
+      <table id="weblinks">
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th>Game Name</th>
+            <th>Website Link</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableGame">
+          <!-- >>>>>>>>>Fectched data goes here<<<<<<<<<< -->
+        </tbody>
+        <tfoot>
+          <tr class="game-input">
+            <td>
+              <input
+                id="team-name-input"
+                type="text"
+                placeholder="Team Name"
+                required="required"
+              />
+            </td>
+            <td>
+              <input
+                id="game-name-input"
+                type="text"
+                placeholder="Game name"
+                required="required"
+              />
+            </td>
+            <td>
+              <input
+                type="url"
+                name="url"
+                id="gUrl"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                size="30"
+                required="required"
+              />
+            </td>
+            <td>
+              <button id="submit" class="btn btn-submit" onclick="gameSubmit()">
+                Submit
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+      integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
+      crossorigin="anonymous"
+    ></script>
+
     <script type="text/javascript" src="./javascript.js"></script>
-
   </body>
 </html>

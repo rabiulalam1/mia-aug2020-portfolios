@@ -3,7 +3,6 @@
 body {
   margin: 0 auto;
   padding: 1em;
-  max-width: 60em;
   font-family: "Roboto Mono", sans-serif;
   line-height: 1.5;
   color: #2d354c;
@@ -72,6 +71,12 @@ table input {
   color: white;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
 }
